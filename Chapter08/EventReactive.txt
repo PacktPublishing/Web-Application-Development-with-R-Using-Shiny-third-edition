@@ -1,0 +1,22 @@
+library(shiny)
+shinyApp(
+ui = fluidPage(
+column(4,
+numericInput("x", "Value", 1),
+actionButton("button", "Show")
+      ),
+column(8, tableOutput("table"))
+    ),
+
+server = function(input, output) {
+observeEvent(input$button, {
+cat("Showing", input$x, "rows\n")
+      })
+df<- eventReactive(input$button, {
+head(iris, input$x)
+      })
+output$table<- renderTable({
+df()
+      })
+    }
+  )
