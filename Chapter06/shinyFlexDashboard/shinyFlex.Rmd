@@ -1,0 +1,122 @@
+---
+title: "Shiny gapminder"
+runtime: shiny
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+
+library(flexdashboard)
+library(tidyverse)
+library(gapminder)
+library(leaflet)
+library(ggmap)
+
+if(!file.exists("geocodedData.Rdata")){
+  
+  mapData = gapminder %>%
+    mutate(country2 = as.character(country)) %>%
+    group_by(country) %>%
+    slice(1) %>%
+    mutate_geocode(country2, source = "dsk") %>%
+    select(-country2)
+  
+  mapData = left_join(gapminder, mapData) %>%
+    group_by(country) %>%
+    fill(lon) %>%
+    fill(lat)
+  
+  save(mapData, file = "geocodedData.Rdata")
+  
+} else {
+  
+  load("geocodedData.Rdata")
+}
+
+```
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+```{r}
+
+sliderInput("year",
+            "Years included",
+            min = 1952,
+            max = 2007,
+            value = c(1952, 2007),
+            sep = "",
+            step = 5
+)
+
+checkboxInput("linear", label = "Add trend line?", value = FALSE)
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Life expectancy over time
+
+```{r}
+
+renderPlot({
+  
+  thePlot = mapData %>%
+    filter(year >= input$year[1], year <= input$year[2]) %>%
+    group_by(continent, year) %>%
+    summarise(meanLife = mean(lifeExp)) %>%
+    ggplot(aes(x = year, y = meanLife, group = continent, colour = continent)) +
+    geom_line()
+  
+  if(input$linear){ 
+    thePlot = thePlot + geom_smooth(method = "lm") 
+  } 
+  
+  print(thePlot)
+})
+
+```
+
+Row {.tabset}
+-----------------------------------------------------------------------
+
+### Life expectancy
+
+```{r}
+
+renderLeaflet({
+  
+  mapData %>%
+    filter(year == input$year[2]) %>%
+    leaflet() %>%
+    addTiles() %>%
+    setView(lng = 0, lat = 0, zoom = 2) %>%
+    addCircles(lng = ~ lon, lat = ~ lat, weight = 1,
+               radius = ~ lifeExp * 5000, 
+               popup = ~ paste(country, lifeExp))
+})
+
+```
+
+### GDP per capita
+
+```{r}
+
+renderLeaflet({
+  
+  mapData %>%
+    filter(year == input$year[2]) %>%
+    leaflet() %>%
+    addTiles() %>%
+    setView(lng = 0, lat = 0, zoom = 2) %>%
+    addCircles(lng = ~ lon, lat = ~ lat, weight = 1,
+               radius = ~ log(gdpPercap) * 25000, 
+               popup = ~ paste(country, gdpPercap))
+})
+
+```
+
