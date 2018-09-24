@@ -1,0 +1,26 @@
+library(shiny)
+library(miniUI)
+library(ggplot2)
+click_gadget <- function(data, xvar, yvar) {
+  ui <- miniPage(
+    gadgetTitleBar("Drag to select points"),
+    miniContentPanel(
+      
+      plotOutput("plot", height = "100%",click = "plot_click")
+    )
+  )
+  server <- function(input, output, session) {
+     # Render the plot
+    output$plot <- renderPlot({
+      # Plot the data with x/y vars indicated by the caller.
+      ggplot(data, aes_string(xvar, yvar)) + geom_point()
+    })
+    
+    # Handle the Done button being pressed.
+    observeEvent(input$done, {
+      # Return the brushed points. See ?shiny::brushedPoints.
+      stopApp(clickOpts(data, input$plot_click))
+    })
+  }
+   runGadget(ui, server)
+}

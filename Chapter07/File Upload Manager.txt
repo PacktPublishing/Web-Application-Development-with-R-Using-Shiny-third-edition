@@ -1,0 +1,16 @@
+## app.R ##
+library(shiny)
+library(shinydashboard)
+ui <- dashboardPage(
+  dashboardHeader(),
+  dashboardSidebar(),
+  dashboardBody(fileInput("file", label = h3("File input")),
+                 hr(),
+                fluidRow(column(4, verbatimTextOutput("value"))))
+)
+server <- function(input, output) {
+    output$value <- renderPrint({
+  str(input$file)
+  }) 
+  }
+shinyApp(ui, server)

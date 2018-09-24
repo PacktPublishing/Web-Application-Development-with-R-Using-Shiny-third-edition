@@ -1,0 +1,13 @@
+ui<-function(request){
+  fluidPage(
+    textInput("inptxt","Enter Number"),
+    verbatimTextOutput("outsquare"),
+    bookmarkButton()
+   ) 
+  }
+server<- function(input,output,session){
+  output$outsquare<- renderText({
+    (as.numeric(input$inptxt)*as.numeric(input$inptxt))
+  })
+}
+shinyApp(ui,server,enableBookmarking="server") # saving to the server

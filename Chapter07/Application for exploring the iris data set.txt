@@ -1,0 +1,39 @@
+library(shiny)
+shinyApp(
+  
+  #---------------Ui start--------------------------------
+  ui = basicPage( fluidRow(
+    column(width = 4,
+           plotOutput("plot", height=300,
+                      click = "plot_click",  
+                      hover = hoverOpts(id = "plot_hover", delayType = "throttle"),
+                      brush = brushOpts(id = "plot_brush")
+           ),
+           h4("Clicked points"),
+           tableOutput("plot_clickedpoints")
+    ),
+    column(width = 4,verbatimTextOutput("plot_hoverinfo")
+    )
+    
+    )),
+  
+  server = function(input, output, session) {
+    
+    output$plot <- renderPlot({
+    plot(iris$Sepal.Length, iris$Sepal.Width)
+    })
+    
+    output$plot_clickedpoints <- renderTable({
+      # For base graphics, we need to specify columns, though for ggplot2,
+      # it's usually not necessary.
+      res <- nearPoints(iris, input$plot_click, "Sepal.Length", "Sepal.Width")
+      if (nrow(res) == 0)
+        return()
+      res
+    })
+   output$plot_hoverinfo <- renderPrint({
+      cat("Hover (throttled):\n")
+      str(input$plot_hover)
+    })  
+    }
+)

@@ -1,0 +1,38 @@
+ui <- function(request) {
+  fluidPage(
+    sidebarPanel(
+      textInput("txt","Number"),
+      actionButton("add", "Add"),
+      bookmarkButton()
+    ),
+    mainPanel(
+      h4("Sum of Random Number and Inputed Number:", textOutput("result"))
+    )
+  )
+}
+
+server <- function(input, output, session) {
+  vals <- reactiveValues(result = 0)
+  
+  # Save  values in state$values for bookmark
+  onBookmark(function(state) {
+    state$values$currentresult <- vals$result
+  })
+  
+  # Read values from state$values when we restore
+  onRestore(function(state) {
+    vals$result <- state$values$currentresult
+  })
+  
+  # Exclude the add button from bookmarking
+  setBookmarkExclude("add")
+  
+  observeEvent(input$add, {
+    vals$result <- vals$result + floor(runif(1))+as.numeric(input$txt)
+  })
+  output$result <- renderText({
+    vals$result
+  })
+}
+
+shinyApp(ui, server, enableBookmarking = "url")
