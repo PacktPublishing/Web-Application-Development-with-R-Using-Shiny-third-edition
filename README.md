@@ -47,7 +47,7 @@ With the following software and hardware list you can run all code files present
 | 9        | RStuio 1.1.456, Amazon AWS (EC2)            | Mac OS X 10.6 or higher, Ubuntu 12 or higher, Windows 7, 8.0, 8.1 or 10 (32-bit and 64-bit) |
 
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](Graphics Bundle Link).
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781788993128_ColorImages.pdf).
 
 
 ### Related products <Other books you may enjoy>
