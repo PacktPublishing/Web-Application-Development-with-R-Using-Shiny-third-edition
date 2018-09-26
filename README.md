@@ -27,10 +27,11 @@ All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
 ```
-if (test expression)
-{
-  Statement upon condition is true
-}
+<ul>
+ <li>First bullet</li>
+ <li>Second bullet</li>
+ <li>Third bullet</li>
+</ul>
 ```
 
 **Following is what you need for this book:**
