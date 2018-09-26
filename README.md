@@ -2,7 +2,7 @@
 
 <a href="Packt UTM URL of the Book"><img src="Cover Image URL of the Book" alt="Web Application Development with R Using Shiny" height="256px" align="right"></a>
 
-This is the code repository for [Book Name](Packt UTM URL of the Book), published by Packt.
+This is the code repository for [Web Application Development with R Using Shiny](Packt UTM URL of the Book), published by Packt.
 
 **Build stunning graphics and interactive data visualizations to deliver cutting-edge analytics**
 
