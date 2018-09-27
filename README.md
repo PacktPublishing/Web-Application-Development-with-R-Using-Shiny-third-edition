@@ -1,6 +1,6 @@
 # Web Application Development with R Using Shiny
 
-<a href="https://www.packtpub.com/web-development/web-application-development-r-using-shiny-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788993128"><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10166.png" alt="Web Application Development with R Using Shiny" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/web-development/web-application-development-r-using-shiny-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788993128"><img src="https://www.packtpub.com/sites/default/files/B10166.png" alt="Web Application Development with R Using Shiny" height="256px" align="right"></a>
 
 This is the code repository for [Web Application Development with R Using Shiny](Packt UTM URL of the Book), published by Packt.
 
@@ -57,10 +57,10 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Get to Know the Author(s)
 **Chris Beeley**
-Chris Beeley has been using R and other open source software for ten years to better capture, analyze, and visualize data in the healthcare sector in the UK. He is the author of Web Application Development with R Using Shiny. He works full-time, developing software to store, collate, and present questionnaire data using open technologies (MySQL, PHP, R, and Shiny), with a particular emphasis on using the web and Shiny to produce simple and attractive data summaries. Chris is working hard to increase the use of R and Shiny, both within his own organization and throughout the rest of the healthcare sector, as well to enable his organization to better use a variety of other data science tools. Chris has also delivered talks about Shiny all over the country.
+has been using R and other open source software for ten years to better capture, analyze, and visualize data in the healthcare sector in the UK. He is the author of Web Application Development with R Using Shiny. He works full-time, developing software to store, collate, and present questionnaire data using open technologies (MySQL, PHP, R, and Shiny), with a particular emphasis on using the web and Shiny to produce simple and attractive data summaries. Chris is working hard to increase the use of R and Shiny, both within his own organization and throughout the rest of the healthcare sector, as well to enable his organization to better use a variety of other data science tools. Chris has also delivered talks about Shiny all over the country.
 
 **Shitalkumar R. Sukhdeve**
-Shitalkumar R. Sukhdeve is a senior data scientist at PT Smartfren Telecom Tbk, Jakarta, Indonesia. On his career journey, he has worked with Reliance Jio as a data scientist, entrepreneur, and corporate trainer. He has trained over 1,000 professionals and students and has delivered over 200 lectures on R and machine learning. Research and development in AI-driven self-optimizing networks, predictive maintenance, optimal network quality, anomaly detection, and customer experience management for 4G LTE networks are all areas of interest to Shitalkumar. He is very experienced with R, Spark, R Shiny, H2O, Python, KNIME, the Hadoop ecosystem, MapReduce, Hive, and configuring the open source R Shiny server for machine learning models and dashboard deployment.
+is a senior data scientist at PT Smartfren Telecom Tbk, Jakarta, Indonesia. On his career journey, he has worked with Reliance Jio as a data scientist, entrepreneur, and corporate trainer. He has trained over 1,000 professionals and students and has delivered over 200 lectures on R and machine learning. Research and development in AI-driven self-optimizing networks, predictive maintenance, optimal network quality, anomaly detection, and customer experience management for 4G LTE networks are all areas of interest to Shitalkumar. He is very experienced with R, Spark, R Shiny, H2O, Python, KNIME, the Hadoop ecosystem, MapReduce, Hive, and configuring the open source R Shiny server for machine learning models and dashboard deployment.
 
 
 ## Other books by the authors
