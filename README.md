@@ -2,7 +2,7 @@
 
 <a href="https://www.packtpub.com/web-development/web-application-development-r-using-shiny-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788993128"><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10166.png" alt="Web Application Development with R Using Shiny" height="256px" align="right"></a>
 
-This is the code repository for [Web Application Development with R Using Shiny](Packt UTM URL of the Book), published by Packt.
+This is the code repository for [Web Application Development with R Using Shiny](https://www.packtpub.com/web-development/web-application-development-r-using-shiny-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788993128), published by Packt.
 
 **Build stunning graphics and interactive data visualizations to deliver cutting-edge analytics**
 
