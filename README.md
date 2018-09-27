@@ -16,7 +16,7 @@ This book covers the following exciting features:
 * Learn advanced code patterns to make your applications easy to write and maintain
 * Develop a full understanding of Shiny's UI functions to give you the power to build a wide variety of attractive applications
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/10DigitISBN) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788993128) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
@@ -37,7 +37,7 @@ The code will look like the following:
 **Following is what you need for this book:**
 Web Application Development with R Using Shiny is for you if you are interested in creating compelling web applications and interactive data visualization over the web using Shiny. Programming experience with R is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-9).
 
 ### Software and Hardware List
 
