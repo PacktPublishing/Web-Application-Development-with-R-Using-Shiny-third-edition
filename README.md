@@ -51,9 +51,9 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 
 ### Related products <Other books you may enjoy>
-* Linux: Powerful Server Administration [[Packt]](https://www.packtpub.com/networking-and-servers/linux-powerful-server-administration?utm_source=github&utm_medium=repository&utm_campaign=9781788293778) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* Data Analysis with R - Second Edition [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/data-analysis-r-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788393720) [[Amazon]](https://www.amazon.com/dp/1788393724)
 
-* Linux Device Drivers Development [[Packt]](https://www.packtpub.com/networking-and-servers/linux-device-drivers-development?utm_source=github&utm_medium=repository&utm_campaign=9781785280009) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* R Data Visualization Recipes [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/r-data-visualization-recipes?utm_source=github&utm_medium=repository&utm_campaign=9781788398312) [[Amazon]](https://www.amazon.com/dp/1788398319)
 
 ## Get to Know the Author(s)
 **Chris Beeley**
