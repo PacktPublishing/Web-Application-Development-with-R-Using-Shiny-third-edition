@@ -55,7 +55,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * R Data Visualization Recipes [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/r-data-visualization-recipes?utm_source=github&utm_medium=repository&utm_campaign=9781788398312) [[Amazon]](https://www.amazon.com/dp/1788398319)
 
-## Get to Know the Author(s)
+## Get to Know the Authors
 **Chris Beeley**
 has been using R and other open source software for ten years to better capture, analyze, and visualize data in the healthcare sector in the UK. He is the author of Web Application Development with R Using Shiny. He works full-time, developing software to store, collate, and present questionnaire data using open technologies (MySQL, PHP, R, and Shiny), with a particular emphasis on using the web and Shiny to produce simple and attractive data summaries. Chris is working hard to increase the use of R and Shiny, both within his own organization and throughout the rest of the healthcare sector, as well to enable his organization to better use a variety of other data science tools. Chris has also delivered talks about Shiny all over the country.
 
