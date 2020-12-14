@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/web-application-development-with-r-using-shiny-second-edition/9781782174349)
+-----
+*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1782174346).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Web Application Development with R Using Shiny
 
 <a href="https://www.packtpub.com/web-development/web-application-development-r-using-shiny-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788993128"><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10166.png" alt="Web Application Development with R Using Shiny" height="256px" align="right"></a>
